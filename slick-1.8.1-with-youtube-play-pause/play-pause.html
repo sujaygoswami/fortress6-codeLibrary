@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title> 
+        How to play/pause video 
+        using JQuery? 
+    </title> 
+      
+    <script src= 
+        "https://code.jquery.com/jquery-3.4.1.min.js"> 
+    </script> 
+</head> 
+  
+<body> 
+    <h1 style="color: green"> 
+        GeeksforGeeks 
+    </h1> 
+      
+    <b> 
+        Play/pause HTML 5 video 
+        using JQuery? 
+    </b> 
+      
+    <p> 
+        Click on the buttons to play 
+        or pause the video. 
+    </p> 
+      
+    <button onclick="playVideo()"> 
+        Play Video 
+    </button> 
+      
+    <button onclick="pauseVideo()"> 
+        Pause Video 
+    </button> 
+    <br> 
+      
+    <video id="sample_video" width="360" height="240"> 
+        <source src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20200107020629/sample_video.mp4"
+                type="video/mp4"> 
+    </video> 
+
+    <!-- <iframe id="sample_video" width="560" height="315"
+        src="https://www.youtube.com/embed/UthBdT0iH5w?si=Rds25ZJCBjD3kzSJ&enablejsapi=1" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+      
+    <script> 
+        function playVideo() { 
+            $('#sample_video').get(0).play();
+            alert('yes'); 
+        } 
+      
+        function pauseVideo() { 
+            $('#sample_video').get(0).pause(); 
+        } 
+    </script> 
+</body> 
+  
+</html>
